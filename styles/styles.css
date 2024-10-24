@@ -1,6 +1,6 @@
 :root {
-  --branding-color: #ffffff;
-  --secondary-color: #cec385;
+  --branding-color: #cec385;
+  --secondary-color: #cda434;
   --terciary-color: rgb(40, 39, 101);
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
@@ -24,6 +24,7 @@ h1 {
 h2 {
   font-size: 3.5em;
   color: var(--terciary-color);
+  font-family: var(--heading-font-family);
 }
 h3 {
   font-family: var(--default-font-family);
@@ -61,10 +62,10 @@ img {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
-  border: 1px solid #d5c66d;
+  border: 1px solid #d8ae38;
 }
 .btn-branding:hover {
-  background-color: #b8ab62cf;
+  background-color: #cda434d1;
   color: white;
 }
 .btn-branding-outline {
@@ -76,7 +77,7 @@ img {
   padding: 15px 30px;
 }
 .btn-branding-outline:hover {
-  background: #b8ab62cf;
+  background: #cda434d1;
   color: white;
 }
 .title-section {
@@ -94,7 +95,7 @@ img {
 }
 .content-container h2 {
   font-size: 18px;
-  font-family: var(--default-font-family);
+  font-family: var(--heading-font-family);
 }
 .content {
   margin: 30px;
@@ -122,6 +123,17 @@ img {
 }
 .row {
   padding-bottom: 80px;
+}
+.logo {
+  max-height: 45px;
+}
+.nav-link {
+  color: var(--secondary-color);
+  font-weight: 100;
+}
+.navbar-nav .nav-link.active {
+  color: var(--secondary-color);
+  font-weight: bold;
 }
 @media (max-width: 900px) {
   p {
